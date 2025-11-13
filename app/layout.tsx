@@ -3,20 +3,16 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import './global.css';
 
-interface LayoutProps {
-  children: ReactNode;
-}
+interface LayoutProps { children: ReactNode; }
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <div className="app-container">
-      <Header />
-      <div className="main-content">
-        <Sidebar />
-        <div className="feed">{children}</div>
-      </div>
+const Layout: React.FC<LayoutProps> = ({ children }) => (
+  <div className="app-layout">
+    <Header />
+    <div className="main-content">
+      <Sidebar />
+      <main>{children}</main>
     </div>
-  );
-};
+  </div>
+);
 
 export default Layout;
