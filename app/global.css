@@ -1,24 +1,46 @@
-body { margin: 0; font-family: Arial, sans-serif; }
-.app-layout { display: flex; flex-direction: column; min-height: 100vh; }
-.main-content { display: flex; flex: 1; }
-header.header { background: #ff69b4; padding: 1rem; color: white; }
-.sidebar { width: 200px; background: #f0f0f0; padding: 1rem; }
-main { flex: 1; padding: 1rem; }
-.post-card { background: #fff; border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
-.loading { font-size: 1.2rem; color: #888; }  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+/* app/global.css */
+
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Example container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Links */
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
 button {
-  cursor: pointer;
+  padding: 8px 16px;
   border: none;
-  border-radius: 8px;
-  padding: 8px 12px;
-  background-color: #1877f2;
-  color: #fff;
-  font-weight: bold;
-  transition: background-color 0.2s;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #165cdb;
+  background-color: #005bb5;
 }
