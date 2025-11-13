@@ -1,40 +1,11 @@
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background-color: #f0f2f5;
-  color: #1c1e21;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-content {
-  display: flex;
-  flex: 1;
-}
-
-.sidebar {
-  width: 250px;
-  background-color: #fff;
-  border-right: 1px solid #ddd;
-  padding: 20px;
-}
-
-.feed {
-  flex: 1;
-  padding: 20px;
-  display: grid;
-  gap: 20px;
-}
-
-.post-card {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+body { margin: 0; font-family: Arial, sans-serif; }
+.app-layout { display: flex; flex-direction: column; min-height: 100vh; }
+.main-content { display: flex; flex: 1; }
+header.header { background: #ff69b4; padding: 1rem; color: white; }
+.sidebar { width: 200px; background: #f0f0f0; padding: 1rem; }
+main { flex: 1; padding: 1rem; }
+.post-card { background: #fff; border: 1px solid #ddd; padding: 1rem; margin-bottom: 1rem; border-radius: 8px; }
+.loading { font-size: 1.2rem; color: #888; }  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 button {
